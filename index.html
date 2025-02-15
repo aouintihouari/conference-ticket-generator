@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Conference ticket generator</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <img class="logo-full" src="assets/images/logo-full.svg" alt="" />
+        <h1 class="title text-preset-1">
+          Your Journey to Coding Conf 2025 Starts Here!
+        </h1>
+        <p class="description text-preset-4">
+          Secure your spot at next year's biggest coding conference.
+        </p>
+      </header>
+      <form class="form" action="">
+        <p class="label">Upload Avatar</p>
+        <input
+          type="file"
+          id="imageUpload"
+          accept="image/png, image/jpeg"
+          hidden
+        />
+        <div class="upload-image__container">
+          <div class="icon-upload__container">
+            <img
+              class="image-preview"
+              id="imagePreview"
+              src="assets/images/icon-upload.svg"
+              alt=""
+            />
+          </div>
+          <p class="text-preset-6 upload-image__message">
+            Drag and drop or click to upload
+          </p>
+          <p class="image-handle-container">
+            <span class="remove text-preset-7">Remove image</span>
+            <span class="change text-preset-7">Change image</span>
+          </p>
+        </div>
+        <p class="text-preset-7 photo-size-format">
+          <svg
+            class="icon-info"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="none"
+            viewBox="0 0 16 16"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+            />
+            <path fill="currentColor" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.004 10.462V7.596M8 5.569v-.042"
+            />
+          </svg>
+          <span class="info-message" id="infoMessage"
+            >Upload your photo (JPG or PNG, max size: 500KB).</span
+          >
+        </p>
+        <div class="input__container">
+          <label class="label" for="full-name">Full Name</label>
+          <input class="input" id="full-name" type="text" />
+          <p class="error-message text-preset-7">
+            <svg
+              class="icon-info"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+              />
+              <path
+                fill="currentColor"
+                d="M8.004 10.462V7.596ZM8 5.57v-.042Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042"
+              />
+            </svg>
+            Please enter a valid full name.
+          </p>
+        </div>
+        <div class="input__container">
+          <label class="label" for="email">Email Address</label>
+          <input
+            class="input"
+            id="email"
+            type="email"
+            placeholder="example@email.com"
+          />
+          <p class="error-message text-preset-7">
+            <svg
+              class="icon-info"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+              />
+              <path
+                fill="currentColor"
+                d="M8.004 10.462V7.596ZM8 5.57v-.042Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042"
+              />
+            </svg>
+            Please enter a valid email address.
+          </p>
+        </div>
+        <div class="input__container">
+          <label class="label" for="github">GitHub Username</label>
+          <input
+            class="input"
+            id="github"
+            type="text"
+            placeholder="@yourusername"
+          />
+          <p class="error-message text-preset-7">
+            <svg
+              class="icon-info"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+              />
+              <path
+                fill="currentColor"
+                d="M8.004 10.462V7.596ZM8 5.57v-.042Z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.004 10.462V7.596M8 5.569v-.042"
+              />
+            </svg>
+            Please enter a valid github username.
+          </p>
+        </div>
+        <button class="generate-btn text-preset-5 bolder">
+          Generate My Ticket
+        </button>
+      </form>
+      <section class="congrats">
+        <img class="logo-full" src="assets/images/logo-full.svg" alt="" />
+        <h2 class="text-preset-1 congrats__title">
+          Congrats, <span class="name-user">Jonatan Kristof</span>! Your ticket
+          is ready.
+        </h2>
+        <p class="text-preset-4 congrats__description">
+          We've emailed your ticket to
+          <span class="email-user">jonatan@email.com</span> and will send
+          updates in the run up to the event.
+        </p>
+        <div class="ticket">
+          <div class="ticket__left">
+            <div class="ticket__top">
+              <img src="assets/images/logo-full.svg" alt="" />
+              <p class="date text-preset-6">Jan 31, 2025 / Austin, TX</p>
+            </div>
+            <div class="ticket__bottom">
+              <img
+                class="ticket__logo ticket__image"
+                src="assets/images/image-avatar.jpg"
+                alt=""
+              />
+              <div>
+                <h2 class="text-preset-3 profile-name">Jonatan Kristof</h2>
+                <p class="text-preset-5 github-name">
+                  <img src="assets/images/icon-github.svg" alt="" />
+                  @jonatankristof0101
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="ticket__right">#01609</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
